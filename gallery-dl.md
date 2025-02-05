@@ -378,4 +378,4 @@ Use "*\--exec*" to run a command after each downloaded file. Supported replaceme
 
 Use "*\--exec-after*" to run a command after all the files finished downloading. Same replacement fields as "\--exec"
 
-`gallery-dl --exec-after "mogrify -format png *.jpg" <url>`
+`gallery-dl --exec-after "mogrify -format jpg *.png" <url>`
