@@ -14,7 +14,9 @@ gallery-dl \[*options*\] \[*url*\]
 # DESCRIPTION
 
 Gallery-dl is a useful and versatile bulk media downloader written in python.
+
 At the time of writing (March 18 2025) 284 sites are supported. Images are supported
+
 by default but HLS/DASH videos will require either yt-dlp or youtube-dl.
 
 Man page authored by plshelpidkwhatimdoing
@@ -30,6 +32,13 @@ To add the authors name (the @ one, not display name) to that, use this (quotes 
 - Note: keywords must have brackets around them or they will be interpreted as literal, not variables.
 
 - Setting invalid keywords will result in it being replaced with "None".
+
+Some sites like "civitai.com" may have keywords with multiple brackets. In the "-K" switch output, they will likely resemble this
+```
+version['files'][N]['url']
+  <url>
+```
+The "N" means that keyword is part of a list of objects, so to use it, you would type it as "{version[files][0][url]}"
 
 To set the destination for downloads, use the "-d / \--destination" switch.
 
