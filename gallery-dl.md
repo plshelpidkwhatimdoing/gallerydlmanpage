@@ -17,6 +17,8 @@ Gallery-dl is a useful and versatile bulk media downloader written in python.
 At the time of writing (March 18 2025) 284 sites are supported. Images are supported
 by default but HLS/DASH videos will require either yt-dlp or youtube-dl.
 
+Authored by plshelpidkwhatimdoing
+
 ## GENERAL OPTIONS
 
 To specify a filename format "-f / \--filename". Using twitter as an example, the default filename format is "{tweet_id}_{num}.{extension}".
