@@ -17,7 +17,7 @@ Gallery-dl is a useful and versatile bulk media downloader written in python.
 At the time of writing (March 18 2025) 284 sites are supported. Images are supported
 by default but HLS/DASH videos will require either yt-dlp or youtube-dl.
 
-Authored by plshelpidkwhatimdoing
+Man page authored by plshelpidkwhatimdoing
 
 ## GENERAL OPTIONS
 
