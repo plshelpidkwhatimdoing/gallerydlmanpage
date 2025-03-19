@@ -1,5 +1,5 @@
 ---
-date: November 29, 2024
+date: March 18, 2025
 title: Gallery-dl manual page
 ---
 
@@ -14,8 +14,8 @@ gallery-dl \[*options*\] \[*url*\]
 # DESCRIPTION
 
 Gallery-dl is a useful and versatile bulk media downloader written in python.
-At the time of writing (28 Nov 2024) 273 sites are supported. Images are supported
-by defualt but HLS/DASH videos will require either yt-dlp or youtube-dl.
+At the time of writing (March 18 2025) 284 sites are supported. Images are supported
+by default but HLS/DASH videos will require either yt-dlp or youtube-dl.
 
 ## GENERAL OPTIONS
 
@@ -35,7 +35,7 @@ To set the destination for downloads, use the "-d / \--destination" switch.
 
 Note that that this switch will still create a subfolder for its respective site. 
 
-For example downloading from twitter and using "-d ." will put the downloads in "{current directory}/twitter/{persons username}"
+For example downloading from twitter and using "-d ." will put the downloads in "current directory/twitter/{persons username}"
 
 If you want to avoid that, use "-D / \--directory" instead.
 
@@ -322,9 +322,9 @@ Using "\--range" to download 6 - 50: (6-50 is also acceptable)
 
 The option "*\--chapter-range*" is similar but applies to manga chapters instead of individual posts. It has the same use style as "\--range" so examples will not be written.
 
-To use python expressions and/or keywords from "-K", use "\--filter". This command will skip all images wider then 1200px: (unless I mixed up my symbols)
+To use python expressions and/or keywords from "-K", use "\--filter". This command will skip all images wider then 1200px:
 
-`gallery-dl --filter "width >= 1200" <url>`
+`gallery-dl --filter "width <= 1200" <url>`
 
 The option "*\--chapter-filter*" only applies to manga chapters. This command will only download chapters in english:
 
@@ -350,7 +350,7 @@ To write metadata about the entire gallery to an "info.json" use, "*\--write-inf
 
 To write image tags to a text file, use "*\--write-tags*"
 
-Use "*\--zip*" to store downloaded files in a zip file. Compression options are "store", "zip", "bzip2", "lzma", default is "store". Compression with brotli and/or zstandard is also possible.
+Use "*\--zip*" to store downloaded files in a zip file. Compression options are "store", "zip", "bzip2", "lzma", default is "store". Compression with brotli (.br) and/or zstandard (.zst) is also possible.
 
 Use "*\--cbz*" to store downloaded files in a cbz file. Compression options are same as zip.
 
